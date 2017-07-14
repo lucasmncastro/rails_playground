@@ -1,7 +1,7 @@
 class User < ApplicationRecord
   
   # Before
-  # scope :recently_updated, -> where("updated_at <= #{Date.today}")
+  # scope :recently_updated, where("updated_at <= #{Date.today - 2.days}")
   
   # After
   # - Scope body needs to be callable
