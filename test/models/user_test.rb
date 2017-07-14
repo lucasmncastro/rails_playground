@@ -97,7 +97,7 @@ class UserTest < ActiveSupport::TestCase
     assert_equal(expected, found)
   end
 
-  test "recently_updated should get the users updates 2 days ago from now" do
+  test "recently_updated should get the users updated 2 days ago from now" do
     User.delete_all
 
     two_days_ago = Time.now - 2.days
